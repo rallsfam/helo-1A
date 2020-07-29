@@ -19,7 +19,6 @@ app.use(session({
 }));
 
 
-
 massive({
     connectionString: CONNECTION_STRING,
     ssl: {rejectUnauthorized: false}
