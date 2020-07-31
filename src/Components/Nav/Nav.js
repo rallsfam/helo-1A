@@ -6,6 +6,7 @@ import newPost from '../../assets/document.png'
 import power from '../../assets/power.png'
 import './Nav.css'
 import axios from 'axios'
+import { connect } from 'react-redux';
 
 const Nav = props => {
   return (
@@ -24,4 +25,7 @@ const Nav = props => {
       </div>
     </div>)
 }
-export default withRouter(Nav)
+
+const mapStateToProps = reduxState => reduxState;
+
+export default connect(mapStateToProps)(Nav);

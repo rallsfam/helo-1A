@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './Dashboard.css'
 import { Link } from 'react-router-dom'
 import axios from 'axios';
+import { connect } from 'react-redux';
 
 class Dashboard extends Component {
   constructor(props) {
@@ -12,7 +13,7 @@ class Dashboard extends Component {
   }
 
   componentDidMount() {
-    axios('/favorites').then(res => {
+    axios.get('/favorites').then(res => {
       console.log(res)
       this.setState({ favorites: res.data })
     }).catch(err => console.log(err))
@@ -39,4 +40,7 @@ class Dashboard extends Component {
     )
   }
 }
-export default Dashboard
+
+const mapStateToProps = reduxState => reduxState;
+
+export default connect (mapStateToProps, (getUser, clearUser))(Dashboard);

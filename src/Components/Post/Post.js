@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import './Post.css'
 import axios from 'axios'
+
 class Post extends Component {
   constructor(props) {
     super(props)

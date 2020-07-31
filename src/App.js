@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Nav from './component/Nav/Nav'
-import Router from './Router'
+import Routes from './routes'
 import { withRouter } from 'react-router-dom'
 
 class App extends Component {
@@ -10,7 +10,7 @@ class App extends Component {
       <div className="App">
         {/*checking location to show Nav component if we aren't on the landing page */}
         {this.props.location.pathname == '/' ? null : <Nav />}
-        <Router />
+        <Routes />
       </div>
     )
   }

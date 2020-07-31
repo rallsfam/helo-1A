@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import "./Auth.css"
 import axios from 'axios';
 import image from './image'
+import { connect } from 'react-redux';
 
 class Auth extends Component {
   constructor(props) {
@@ -73,4 +74,7 @@ class Auth extends Component {
     )
   }
 }
-export default Auth
+
+const mapStateToProps = reduxState => reduxState;
+
+export default connect(null, getUser)(Auth);

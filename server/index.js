@@ -30,6 +30,10 @@ massive({
 app.post('/auth/register', authCtrl.register);
 app.post('/auth/login', authCtrl.login);
 
-app.post('/auth/register', authCtrl.register);
+app.post('/auth/post', mainCtrl.createPost);
+app.get('/auth/posts/:id', mainCtrl.login);
+app.delete('/auth/post/:id', mainCtrl.deletePost);
+
+app.put('/auth/user/:id', mainCtrl.updateUsername);
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
