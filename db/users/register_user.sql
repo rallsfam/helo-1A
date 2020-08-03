@@ -1,12 +1,2 @@
-insert into helo user {
-    username,
-    email,
-    password,
-    profile_picture
-} values (
-    ${username},
-    ${email},
-    ${password},
-    ${profilePicture}
-);
-returning user_id, username, email, profile_picture; 
+SELECT * FROM users
+WHERE username = $1 and password = $2;

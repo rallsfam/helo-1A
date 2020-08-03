@@ -1,12 +1,12 @@
-CREATE TABLE helo users (
+CREATE TABLE users (
     user_id serial primary key,
     username varchar(255),
     email varchar(255),
-    password text,
-    profile_picture text
+    password varchar(255),
+    picture text
 );
 
-CREATE TABLE helo post (
+CREATE TABLE posts (
     post_id serial primary key,
     user_id int references users(user_id),
     post_url text 

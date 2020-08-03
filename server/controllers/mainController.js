@@ -1,5 +1,4 @@
 module.exports= {
-
     
     createPost: (req, res) => {
         const {id, postImage} = req.body,
