@@ -1,0 +1,42 @@
+.dashboard{
+    position:fixed;
+    width:100vw;
+    background-image: linear-gradient(99deg,#ca6eff,#698b9d 40%,#6db0aa 73%,#66e48f);
+    height:100vh;
+    top:0;
+  }
+
+
+
+/* body{
+    background: -webkit-gradient(linear, right top, left top, color-stop(0, #E9FF70), color-stop(100, #FF70A6));
+   }
+   .container{
+    margin-top: 200px;
+   }
+   .glyphicon-search{
+    font-size: 20px;
+   }
+   .btn-default{
+    background: red;
+    width: 100px;
+    padding: 12.5px;
+    height: 50px;
+   }
+   .form-control{
+    padding: 25px;
+    font-size: 20px;
+   }
+   
+   [type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+    height: 50px;
+    width: 90px;
+    border-radius: 04px;
+   }
+   
+   input[type=checkbox], input[type=radio] {
+    margin-left: 975px;
+    box-sizing: border-box;
+    padding: 0;
+   } */

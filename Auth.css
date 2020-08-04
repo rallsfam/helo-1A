@@ -1,0 +1,76 @@
+.Auth {
+    height: 100vh;
+    width: 100vw;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:#fff;
+    background-image: linear-gradient(99deg,#ca6eff,#698b9d 40%,#6db0aa 73%,#66e48f);
+  }
+  .Auth h1 {
+    font-size: 80px;
+      font-weight: 700;
+  }
+  .Modal{
+    height:55vh;
+    width:35vw;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    padding: 20px;
+  box-sizing:border-box;
+    align-items:center;
+    background-image: linear-gradient(97deg,#ca6eff,#66e48f);
+    border-radius: 8px;
+    box-shadow: 0 14px 28px 0 rgba(0,0,0,.25), 0 10px 10px 0 rgba(0,0,0,.26);
+  }
+  .inputs{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+  
+  }
+  .inputs input{
+    display: flex;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 55%;
+    /* margin:5px; */
+  }
+  .buttons{
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 55%;
+  }
+  .buttons button {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.2);
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    background-image: radial-gradient(circle at 50% -46%,#737373,#403d39);
+    border-radius: 1px;
+  }
+
+
+/* .input-box {
+    padding-top: 20px;
+    margin-top: 20px;
+    display: block;
+    margin: 30px;
+   }
+   
+   .login-register-button {
+    display: block;
+    align-items: center;
+    padding-top: 20px;
+   }
+   
+   button, input, optgroup, select, textarea {
+    margin: 15px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+   } */
